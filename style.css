@@ -1,0 +1,186 @@
+/*
+ *                  CONTENTS
+ * GENERIC
+ * COMPONENTS
+ * LAYOUT
+ * CLASSES
+ *
+ */
+
+
+
+
+
+
+
+
+
+
+/*----------------------------*\
+    #GENERIC 
+\*----------------------------*/
+
+/* #CUSTOM PROPERTIES */
+html {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-background-color: hsl(217, 54%, 11%);
+    --card-background-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --light: 300;
+    --regular: 400;
+    --bold: 600;
+    --mobile: 375px;
+    --desktop: 1440px;
+}
+
+
+
+
+
+/* #BOX-SIZING */
+html                   { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit;    }
+
+
+
+
+
+/* #RESETS */
+* { margin: 0; padding: 0; }
+
+
+
+
+
+/* #ELEMENTS */
+html { 
+    color: var(--soft-blue);
+    font: var(--light) 18px 'Outfit',sans-serif; 
+}
+
+h1 { font: var(--bold) 1.37rem'Outfit',sans-serif; }
+
+
+
+
+
+
+
+
+
+/*----------------------------*\
+    #COMPONENTS
+\*----------------------------*/
+
+.card {
+    background-color: var(--card-background-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: calc(0.9 * var(--mobile));
+}
+
+.card__price {
+    background-image: url(./images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: var(--cyan);
+    font-weight: var(--regular);
+    padding-left: 1rem;
+}
+
+.card__duration {
+    background-image: url(./images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 1.2rem;
+}
+
+.card__attribution {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------*\
+    #LAYOUT
+\*----------------------------*/
+
+.grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------*\
+    #CLASSES
+\*----------------------------*/
+
+/* #BACKGROUNDS */
+.main-background-color { background-color: var(--main-background-color); }
+
+
+
+
+
+/* #COLORS */
+.color-white { color: white; }
+
+
+
+
+
+/* #TEXT LAYOUT */
+.line-height-1-6 { line-height: 1.6; }
+
+
+
+
+
+/* #MARGINS */
+.margin-bottom-1rem   { margin-bottom: 1rem;   }
+.margin-left-1rem     { margin-left:   1rem;   }
+
+
+
+
+
+/* #BORDERS */
+.avatar-border {
+    border: 1px solid white;
+    border-radius: 10rem;
+}
+
+
+
+
+
+/* #SIZE */
+.size-viewport {
+    width: 100vw;
+    height: 100vh;
+}
+
+.width-100 { width: 100%; }
