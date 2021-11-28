@@ -1,9 +1,26 @@
 /*
  *                  CONTENTS
  * GENERIC
+ * ....custom properties
+ * ....box-sizing
+ * ....resets
+ * ....elements
+ *
  * COMPONENTS
+ * ....card
+ *
  * LAYOUT
+ * ....grid-center
+ * ....flex-between
+ *
  * CLASSES
+ * ....backgrounds
+ * ....colors
+ * ....text layout
+ * ....margins
+ * ....borders
+ * ....size
+ * ....hover states
  *
  */
 
@@ -69,15 +86,27 @@ h1 { font: var(--bold) 1.37rem'Outfit',sans-serif; }
 
 
 
+
 /*----------------------------*\
     #COMPONENTS
 \*----------------------------*/
 
+/* #CARD */
 .card {
     background-color: var(--card-background-color);
     border-radius: 1rem;
     padding: 1.5rem;
     max-width: calc(0.9 * var(--mobile));
+}
+
+.card__image {
+    display: block;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 1rem;
+    padding: 8rem 0rem;
 }
 
 .card__price {
@@ -115,11 +144,17 @@ h1 { font: var(--bold) 1.37rem'Outfit',sans-serif; }
     #LAYOUT
 \*----------------------------*/
 
+/* #GRID-CENTER */
 .grid-center {
     display: grid;
     place-items: center;
 }
 
+
+
+
+
+/* #FLEX-BETWEEN*/
 .flex-between {
     display: flex;
     justify-content: space-between;
@@ -183,4 +218,11 @@ h1 { font: var(--bold) 1.37rem'Outfit',sans-serif; }
     height: 100vh;
 }
 
-.width-100 { width: 100%; }
+
+
+
+
+/* #HOVER STATES */
+.cyan-hover-state:hover {
+    color: var(--cyan);
+}
