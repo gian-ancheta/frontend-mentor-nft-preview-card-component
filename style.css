@@ -94,9 +94,10 @@ h1 { font: var(--bold) 1.37rem'Outfit',sans-serif; }
 /* #CARD */
 .card {
     background-color: var(--card-background-color);
+    max-width: calc(0.9 * var(--mobile));
     border-radius: 1rem;
     padding: 1.5rem;
-    max-width: calc(0.9 * var(--mobile));
+    box-shadow: 0px 0px 40px 20px hsla(213, 53%, 10%, 0.75);
 }
 
 .card__image {
