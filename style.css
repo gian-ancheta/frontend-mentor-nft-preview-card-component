@@ -17,6 +17,7 @@
  * ....backgrounds
  * ....colors
  * ....text layout
+ * ....display
  * ....margins
  * ....borders
  * ....size
@@ -190,6 +191,13 @@ h1 { font: var(--bold) 1.37rem'Outfit',sans-serif; }
 
 /* #TEXT LAYOUT */
 .line-height-1-6 { line-height: 1.6; }
+
+
+
+
+
+/* #DISPLAY */
+.display-none { display: none; }
 
 
 
